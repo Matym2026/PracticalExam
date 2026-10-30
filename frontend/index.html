@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acortador de enlaces</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Acortador de enlaces</h1>
+    <p class="sub">Pega una URL larga y obtén un enlace corto.</p>
+
+    <form id="form">
+      <input type="text" id="url" placeholder="https://www.ejemplo.com/articulo-largo" autocomplete="off" required>
+      <button type="submit" id="btn-acortar">Acortar enlace</button>
+    </form>
+
+    <p id="error" class="error" role="alert" hidden></p>
+
+    <section id="resultado" hidden>
+      <p class="label">Tu enlace corto</p>
+      <div class="fila">
+        <a id="short-url" href="#" target="_blank" rel="noopener"></a>
+        <button type="button" id="btn-copiar" class="secundario">Copiar</button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
